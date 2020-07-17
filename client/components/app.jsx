@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import GradeTable from './GradeTable';
+import GradeForm from './GradeForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -42,8 +43,19 @@ class App extends React.Component {
     const average = this.getAverageGrade();
     return (
       <>
-        <Header average={average} />
-        <GradeTable grades={this.state.grades} />
+        <div className="container-fluid">
+          <div className="row">
+            <Header average={average} />
+          </div>
+          <div className="row">
+            <div className="col-8">
+              <GradeTable grades={this.state.grades} />
+            </div>
+            <div className="col-3">
+              <GradeForm />
+            </div>
+          </div>
+        </div>
       </>
     );
   }
