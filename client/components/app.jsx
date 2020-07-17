@@ -6,15 +6,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { grades: [] };
-    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentDidMount() {
-    const prevGrades = this.state.grades;
-    const newGrades = prevGrades.splice();
     fetch('/api/grades')
       .then(response => response.json())
-      .then(data => this.setState({ grades: newGrades.concat(data) }));
+      .then(data => this.setState({ grades: data }));
   }
 
   render() {
