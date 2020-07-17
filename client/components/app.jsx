@@ -24,6 +24,20 @@ class App extends React.Component {
     return newAverage.toString();
   }
 
+  addGrade(newGrade) {
+    const currentGrades = this.state.grades;
+    const newGrades = currentGrades.slice();
+    fetch('/api/grades', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newGrade, null, 2)
+    })
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ grades: newGrades.concat(data) });
+      })
+  }
+
   render() {
     const average = this.getAverageGrade();
     return (
