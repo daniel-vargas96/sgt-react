@@ -8,7 +8,7 @@ function GradeTable(props) {
 
   return (
 
-    <div className="table-container ml-2">
+    <div className="table-container ml-5 border border-dark">
       <table className="table table-bordered table-striped">
         <thead className="thead">
           <tr>
