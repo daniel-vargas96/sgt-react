@@ -7,6 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { grades: [] };
+    this.addGrade = this.addGrade.bind(this);
   }
 
   componentDidMount() {
@@ -47,12 +48,13 @@ class App extends React.Component {
           <div className="row">
             <Header average={average} />
           </div>
+          <hr></hr>
           <div className="row">
             <div className="col-8">
               <GradeTable grades={this.state.grades} />
             </div>
             <div className="col-3">
-              <GradeForm />
+              <GradeForm add={this.addGrade}/>
             </div>
           </div>
         </div>
