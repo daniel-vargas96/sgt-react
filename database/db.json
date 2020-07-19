@@ -17,6 +17,24 @@
       "name": "Douglas Crockford",
       "course": "JavaScript",
       "grade": 100
+    },
+    {
+      "name": "Daniel Vargas",
+      "course": "JavaScript",
+      "grade": "90",
+      "id": 35
+    },
+    {
+      "name": "Efrain Vargas",
+      "course": "JavaScript",
+      "grade": "80",
+      "id": 36
+    },
+    {
+      "name": "I Had A Small Typo Blocking Me The Entire Time Lol",
+      "course": "JavaScript",
+      "grade": "0",
+      "id": 37
     }
   ]
 }
