@@ -37,7 +37,14 @@ class App extends React.Component {
       .then(response => response.json())
       .then(data => {
         this.setState({ grades: newGrades.concat(data) });
-      })
+      });
+  }
+
+  deleteGrade(gradeId) {
+    const currentGrades = this.state.grades;
+    const newGrades = currentGrades.slice();
+    const id = parseInt(gradeId, 10);
+    const targetGrade = newGrades.find(grade => grade.id === id);
   }
 
   render() {
