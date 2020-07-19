@@ -9,8 +9,8 @@ function Header(props) {
           <h1>Student Grade Table</h1>
         </div>
         <div className="col-3 d-flex align-items-center text-center">
-            <label>Average Grade</label>
-            <h3 className="ml-3 pl-3 pr-3 bg-primary text-white border border-dark rounded">{props.average}</h3>
+          <label>Average Grade</label>
+          <h3 className="ml-3 pl-3 pr-3 bg-primary text-white border border-dark rounded">{props.average}</h3>
         </div>
       </div>
 
