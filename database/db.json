@@ -1,40 +1,10 @@
 {
   "grades": [
     {
-      "id": 5,
-      "name": "Kyle Simpson",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 12,
-      "name": "Brendan Eich",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 32,
-      "name": "Douglas Crockford",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
       "name": "Daniel Vargas",
       "course": "JavaScript",
       "grade": "90",
-      "id": 35
-    },
-    {
-      "name": "Efrain Vargas",
-      "course": "JavaScript",
-      "grade": "80",
-      "id": 36
-    },
-    {
-      "name": "I Had A Small Typo Blocking Me The Entire Time Lol",
-      "course": "JavaScript",
-      "grade": "0",
-      "id": 37
+      "id": 1
     }
   ]
 }
