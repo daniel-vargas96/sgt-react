@@ -7,7 +7,7 @@ export default class GradeForm extends React.Component {
       name: '',
       course: '',
       grade: ''
-    }
+    };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.resetGradeForm = this.resetGradeForm.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -24,19 +24,17 @@ export default class GradeForm extends React.Component {
       name: '',
       course: '',
       grade: ''
-    })
+    });
   }
 
   handleChange(event) {
     this.setState({
-      [event.target.name]: event.target.value,
-      [event.target.course]: event.target.value,
-      [event.target.grade]: event.target.value,
+      [event.target.name]: event.target.value
     });
   }
 
   render() {
-    const {name, course, grade} = this.state;
+    const { name, course, grade } = this.state;
     return (
       <div>
         <h5>Add A Grade</h5>
@@ -67,8 +65,8 @@ export default class GradeForm extends React.Component {
           </div>
 
           <div className="form-group">
-            <button onClick={this.resetGradeForm} type="submit" className="btn btn-success">Add</button>
-            <button type="reset" onClick={this.resetGradeForm} className="btn btn-outline-secondary">Cancel</button>
+            <button onClick={this.handleSubmit} type="submit" className="btn btn-success">Add</button>
+            <button type="reset" onClick={this.resetGradeForm} className="btn btn-outline-secondary ml-2">Cancel</button>
           </div>
         </form>
       </div>
